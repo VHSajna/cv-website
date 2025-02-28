@@ -4,6 +4,7 @@ body {
     padding: 0;
     display: flex;
     height: 100vh;
+    overflow-y: scroll;
 }
 
 .container {
@@ -12,13 +13,18 @@ body {
 }
 
 .left-panel, .right-panel {
-    width: 15%;
+    width: 10%;
     background-color: #f4f4f4;
     padding: 20px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
 }
 
 .main-content {
-    width: 70%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
     padding: 20px;
 }
 
@@ -60,4 +66,13 @@ input, textarea, button {
     padding: 10px;
     width: 100%;
     box-sizing: border-box;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+.right-panel i {
+    font-size: 24px;
+    color: #333;
 }
